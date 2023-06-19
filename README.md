@@ -51,6 +51,18 @@ shittier [options] [directory/file]
   shittier -f myfile.js
   ```
 
+## 🚿 Un-shittifying
+
+If you've had enough of the chaos and want to reset your code back to its original state, Shittier provides a handy un-shittifying feature. This feature will undo the shittifying changes made by Shittier and restore your code to its initial format.
+
+To un-shittify your code, Run the un-shittifying command: Open a terminal in your project's root directory and execute the following command:
+
+   ```
+   shittier unshittify [options] [directory/file]
+   ```
+
+   The `unshittify` command will reverse the shittifying changes made by Shittier and restore your code to its original format.
+
 ## 🤝 Contribution
 
 Contributions to Shittier are more than welcome! If you have ideas for new shitty features, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/rohitdhas/shittier). Please adhere to the existing code style, or rather, lack thereof.
