@@ -53,16 +53,16 @@ shittier [options] [directory/file]
 
 ## 🤝 Contribution
 
-Contributions to Shittier are more than welcome! If you have ideas for new shitty features, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/yourusername/shittier). Please adhere to the existing code style, or rather, lack thereof.
+Contributions to Shittier are more than welcome! If you have ideas for new shitty features, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/rohitdhas/shittier). Please adhere to the existing code style, or rather, lack thereof.
 
 ## ⚠️ Disclaimer
 
 Shittier is a purely satirical project created for fun and entertainment purposes. It is not intended for use in any serious development environment. Using Shittier on production code may result in confusion, frustration, and a lot of head-scratching. Use it responsibly and at your own risk.
 
-## 📜 License
+<!-- ## 📜 License
 
 Shittier is released under the [MIT License](https://opensource.org/licenses/MIT). See the [LICENSE](LICENSE) file for more details.
-
+ -->
 ---
 
 Enjoy the chaos and let Shittier transform your perfectly fine code into an unrecognizable mess! Remember, sometimes it's good to embrace the dark side of code formatting. Happy shittifying!
