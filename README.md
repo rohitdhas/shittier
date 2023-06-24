@@ -2,13 +2,13 @@
 
 **Shittier** is a code formatting tool that aims to make your code look as terrible as possible. It is the exact opposite of popular tools like Prettier, which focus on improving code formatting and readability. Shittier embraces chaos, messiness, and confusion, making your code look shittier than ever before.
 
-## 🌟 Features
+With Shittier, you can expect the following:
 
-- **Random Indentation**: Shittier will randomly add inconsistent indentation throughout your code. Say goodbye to neatly aligned blocks of code!
-- **Mixed Case Madness**: Shittier loves to randomly mix uppercase and lowercase letters in variable names, function names, and even keywords. Who needs consistency, right?
-- **Spacing Nightmares**: Shittier will mess up your spacing by randomly adding or removing extra spaces, tabs, or line breaks. Enjoy deciphering a code jungle!
-- **Incoherent Line Lengths**: Shittier doesn't care about line length limits. It will create excessively long or hilariously short lines, making your code look like a never-ending or chopped-up mess.
-- **Creative Comment Chaos**: Shittier will insert random comments that have nothing to do with your code, often containing sarcastic or nonsensical remarks. Who doesn't enjoy a good laugh while debugging?
+- Random indentation for a chaotic code structure.
+- Mixed case madness that breaks consistency.
+- Spacing nightmares with added or removed spaces, tabs, and line breaks.
+- Creative comment chaos with sarcastic or nonsensical remarks.
+
 
 ## 📥️ Installation
 
