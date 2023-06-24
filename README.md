@@ -41,11 +41,6 @@ shittier [options] [directory/file]
   shittier myfile.js
   ```
 
-- Format an entire directory:
-  ```
-  shittier mydirectory/
-  ```
-
 - Force overwrite of files with unsaved changes:
   ```
   shittier -f myfile.js
