@@ -40,7 +40,7 @@ const supportedExtensions = ['.js'];
 const inputFileExtension = extname(inputFilePath.toString()).toLowerCase();
 
 if (!supportedExtensions.includes(inputFileExtension)) {
-  console.error(`❌ Unsupported file type. Only JavaScript files are supported currently.`);
+  console.error(`❌ ERROR: Unsupported file type. Only JavaScript files are supported currently.`);
   process.exit(1);
 }
 
