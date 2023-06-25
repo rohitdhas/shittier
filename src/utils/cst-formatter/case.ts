@@ -39,4 +39,4 @@ function changeCaseRandomly(str: string) {
   return modifiedStr;
 }
 
-module.exports = { randomizeCase };
+export { randomizeCase };
