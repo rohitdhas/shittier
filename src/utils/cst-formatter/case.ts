@@ -24,7 +24,7 @@ function randomizeCase(ast: any) {
         token._sourceCodeLines = [val];
       }
     } catch(err) {
-      // handle token errors
+      // TODO: handle token errors
       // console.log(err);
     }
   });
