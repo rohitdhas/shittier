@@ -1,4 +1,4 @@
-const { Token } = require('cst');
+import { Token } from 'cst';
 
 function addInconsistentIndentation(code: string) {
   const lines = code.split("\n");
