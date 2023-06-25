@@ -12,10 +12,10 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build && node ./scripts/add-shebang.js",
     "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "tsdx build && node ./scripts/add-shebang.js",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
@@ -54,5 +54,21 @@
   "dependencies": {
     "cst": "^0.4.10",
     "yargs": "^17.7.2"
-  }
+  },
+  "bin": {
+    "shittier": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitdhas/shittier.git"
+  },
+  "keywords": [
+    "code-formatter",
+    "shittier",
+    "prettier"
+  ],
+  "bugs": {
+    "url": "https://github.com/rohitdhas/shittier/issues"
+  },
+  "homepage": "https://github.com/rohitdhas/shittier#readme"
 }
