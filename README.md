@@ -7,7 +7,7 @@ With Shittier, you can expect the following:
 - Random indentation for a chaotic code structure.
 - Mixed case madness that breaks consistency.
 - Spacing nightmares with added or removed spaces, tabs, and line breaks.
-- Creative comment chaos with sarcastic or nonsensical remarks.
+<!-- - Creative comment chaos with sarcastic or nonsensical remarks. -->
 
 
 ## 📥️ Installation
@@ -32,7 +32,7 @@ shittier [options] [directory/file]
 
 - `-h, --help`: Displays help information about Shittier and its available options.
 - `-v, --version`: Shows the installed version of Shittier.
-- `-f, --force`: Forces Shittier to overwrite files even if they have unsaved changes.
+- `-f, --force`: Forces Shittier to overwrite files if they already exists.
 
 ### Examples
 
@@ -41,14 +41,11 @@ shittier [options] [directory/file]
   shittier myfile.js
   ```
 
-- Force overwrite of files with unsaved changes:
+- Format a single file and save the modified file with a different name or path:
   ```
-  shittier -f myfile.js
+  shittier myfile.js modified/myfile.js
   ```
-
-## 🤝 Contribution
-
-Contributions to Shittier are more than welcome! If you have ideas for new shitty features, feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/rohitdhas/shittier).
+  Use `--force` flag to force overwrite if output file already exists
 
 ## ⚠️ Disclaimer
 
