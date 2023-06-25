@@ -9,6 +9,7 @@ With Shittier, you can expect the following:
 - Spacing nightmares with added or removed spaces, tabs, and line breaks.
 <!-- - Creative comment chaos with sarcastic or nonsensical remarks. -->
 
+![Shittier Preview](public/shittier-example.gif)
 
 ## 📥️ Installation
 
