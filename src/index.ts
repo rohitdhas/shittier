@@ -33,7 +33,7 @@ if (argv.help) {
 }
 
 const inputFilePath = argv._[0];
-const outputFilePath = argv._[1];
+const outputFilePath = argv._[1] || inputFilePath;
 
 // Validate file extension
 const supportedExtensions = ['.js', '.ts'];
