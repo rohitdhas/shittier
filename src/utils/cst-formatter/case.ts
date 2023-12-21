@@ -1,11 +1,24 @@
 interface Imap {
-    [key: string]: string; 
+  [key: string]: string;
 }
 
-const requiredTokenTypes = ["VariableDeclarator", "FunctionDeclaration", "ClassDeclaration"];
+const requiredTokenTypes = [
+  'VariableDeclarator',
+  'FunctionDeclaration',
+  'ClassDeclaration',
+];
 const map: Imap = {};
 
 function randomizeCase(ast: any) {
+  ast.selectTokensByType('Identifier').forEach((token: any) => {
+    if (token.parentElement.parentElement.type === 'FunctionDeclaration') {
+      if (!map[token.value]) {
+        const update = changeCaseRandomly(token.value);
+        map[token.value] = update;
+      }
+    }
+  });
+
   ast.selectTokensByType('Identifier').forEach((token: any) => {
     try {
       if (requiredTokenTypes.includes(token.parentElement.parentElement.type)) {
@@ -23,7 +36,7 @@ function randomizeCase(ast: any) {
         token._sourceCode = val;
         token._sourceCodeLines = [val];
       }
-    } catch(err) {
+    } catch (err) {
       // TODO: handle token errors
       // console.log(err);
     }
