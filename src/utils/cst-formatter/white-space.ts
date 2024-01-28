@@ -24,7 +24,7 @@ function addRandomWhiteSpace(code: any) {
         prevToken._sourceCode = randomWhitespaceBefore;
         prevToken._sourceCodeLines = [randomWhitespaceBefore];
       } else {
-        const shouldUseComments = (Math.random() < 0.2);
+        const shouldUseComments = (Math.random() <= 0.1);
         let distractionBefore = (shouldUseComments)
           ? new Token(
             'CommentBlock',
