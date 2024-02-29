@@ -8,7 +8,7 @@ import {
   addRandomWhiteSpace,
 } from './utils/cst-formatter/white-space';
 
-function shittify(code: string) {
+export function shittify(code: string) {
   const modifiedCode = addInconsistentIndentation(code);
   const cst = new Parser().parse(modifiedCode);
   randomizeCase(cst);
