@@ -7,7 +7,7 @@ const requiredTokenTypes = [
   'FunctionDeclaration',
   'ClassDeclaration',
 ];
-const map: Imap = {};
+const map: Imap = Object.create(null);
 
 function randomizeCase(ast: any) {
   ast.selectTokensByType('Identifier').forEach((token: any) => {
