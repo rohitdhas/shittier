@@ -13,7 +13,7 @@ function randomizeCase(ast: any) {
   ast.selectTokensByType('Identifier').forEach((token: any) => {
     if (token.parentElement.parentElement.type === 'FunctionDeclaration') {
       if (!map[token.value]) {
-        const update = changeCaseRandomly(token.value);
+        const update = mangleIdentifier(token.value);
         map[token.value] = update;
       }
     }
@@ -23,7 +23,7 @@ function randomizeCase(ast: any) {
     try {
       if (requiredTokenTypes.includes(token.parentElement.parentElement.type)) {
         if (!map[token.value]) {
-          const update = changeCaseRandomly(token.value);
+          const update = mangleIdentifier(token.value);
           map[token.value] = update;
         }
         const val = map[token.value];
@@ -43,10 +43,18 @@ function randomizeCase(ast: any) {
   });
 }
 
-function changeCaseRandomly(str: string) {
+/** Change case of every character (50% chance), add underscores (10%), and remove existing underscores (90%) */
+function mangleIdentifier(str: string) {
   let modifiedStr = '';
   for (let i = 0; i < str.length; i++) {
-    const randomCase = Math.random() < 0.5 ? 'toUpperCase' : 'toLowerCase';
+    let rn = Math.random();
+    if (str[i] == '_' && rn > 0.1) {
+      continue;
+    } else if (str[i] != '_' && rn < 0.1) {
+      modifiedStr += '_';
+    }
+
+    const randomCase = rn < 0.5 ? 'toUpperCase' : 'toLowerCase';
     modifiedStr += str[i][randomCase]();
   }
   return modifiedStr;
